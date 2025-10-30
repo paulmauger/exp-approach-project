@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Oct 30 2025 18:14:10
+#sha1: ccd8b4
+#modules: constants.py (2a6450), exp_utils.py (84d305), trial.py (738918)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+3119,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+3119,design,logged,
+3119,Experiment,started
+3121,stderr,received,'Traceback (most recent call last):'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 54, in <module>\n    run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 11, in run_trial\n    stim = stimuli.TextLine(sequence)'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/stimuli/_textline.py", line 71, in __init__\n    Visual.__init__(self, position, log_comment=text)\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 235, in __init__\n    Stimulus.__init__(self, log_comment)\n    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/stimuli/_stimulus.py", line 46, in __init__\n    log_txt = "{0},{1}".format(log_txt, bytes_to_unicode(log_comment))\n                                        ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^'
+3122,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/misc/_miscellaneous.py", line 211, in bytes_to_unicode\n    u = s.decode(LOCALE_ENC)\n        ^^^^^^^^'
+3122,stderr,received,"AttributeError: 'list' object has no attribute 'decode'"

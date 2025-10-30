@@ -1,0 +1,21 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Oct 30 2025 18:18:37
+#sha1: fedbd5
+#modules: constants.py (3b56d2), exp_utils.py (28b509), trial.py (de533c)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1401,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1401,design,logged,
+1401,Experiment,started
+1402,Stimulus,presented,0
+1903,Stimulus,presented,1
+2109,Stimulus,presented,1
+11304,stderr,received,'Traceback (most recent call last):'
+11307,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 55, in <module>\n    run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+11307,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 25, in run_trial\n    key, rt = exp.keyboard.wait(KEYS)\n              ~~~~~~~~~~~~~~~~~^^^^^^'
+11307,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/io/_keyboard.py", line 378, in wait\n    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+11307,stderr,received,'KeyboardInterrupt'

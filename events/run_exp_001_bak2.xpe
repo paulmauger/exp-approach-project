@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Thu Oct 30 2025 18:14:51
+#sha1: fedbd5
+#modules: constants.py (2a6450), exp_utils.py (84d305), trial.py (738918)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+5147,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+5147,design,logged,
+5147,Experiment,started
+5148,stderr,received,'Traceback (most recent call last):'
+5148,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 55, in <module>\n    run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+5148,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 15, in run_trial\n    present_for(fixation, t=FIXATION_TIME_CROSS_BARS)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+5148,stderr,received,"TypeError: present_for() got an unexpected keyword argument 't'"
