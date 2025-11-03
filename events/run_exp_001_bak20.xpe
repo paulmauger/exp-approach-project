@@ -1,0 +1,51 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Nov 02 2025 23:49:34
+#sha1: 154d06
+#modules: constants.py (0a001d), exp_utils.py (4798d0), trial.py (452f28)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1154,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1154,design,logged,
+1154,Experiment,started
+1159,Stimulus,presented,1
+1859,Keyboard,received,32,wait
+1860,Stimulus,presented,2
+2361,Stimulus,presented,2
+2576,Stimulus,presented,3
+3028,Keyboard,received,106,wait
+3028,Stimulus,presented,0
+4426,Stimulus,presented,2
+4926,Stimulus,presented,3
+5142,Stimulus,presented,3
+5514,Keyboard,received,106,wait
+5515,Stimulus,presented,0
+6828,Stimulus,presented,2
+7329,Stimulus,presented,4
+7542,Stimulus,presented,3
+8055,Keyboard,received,106,wait
+8055,Stimulus,presented,0
+9367,Stimulus,presented,2
+9868,Stimulus,presented,5
+10075,Stimulus,presented,3
+10609,Keyboard,received,102,wait
+10610,Stimulus,presented,0
+11976,Stimulus,presented,2
+12477,Stimulus,presented,6
+12692,Stimulus,presented,3
+13076,Keyboard,received,106,wait
+13076,Stimulus,presented,1
+14482,Stimulus,presented,7
+15483,Stimulus,presented,8
+16483,Stimulus,presented,9
+17483,Stimulus,presented,10
+18484,Stimulus,presented,11
+19348,stderr,received,'Traceback (most recent call last):'
+19349,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 102, in <module>\n    present_for(exp, instructions, t=1000)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+19349,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/exp_utils.py", line 29, in present_for\n    exp.clock.wait(t - dt)\n    ~~~~~~~~~~~~~~^^^^^^^^'
+19349,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/misc/_clock.py", line 157, in wait\n    while (get_time() < start + waiting_time / 1000):\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+19349,stderr,received,'KeyboardInterrupt'
+19350,Data,saved

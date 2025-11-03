@@ -1,0 +1,99 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Nov 02 2025 22:53:52
+#sha1: 8ead15
+#modules: constants.py (1b0864), exp_utils.py (23eb16), trial.py (452f28)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1549,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1549,design,logged,
+1549,Experiment,started
+1563,Stimulus,presented,1
+2600,Keyboard,received,106,wait
+2601,Stimulus,presented,2
+3101,Stimulus,presented,2
+3312,Stimulus,presented,3
+3994,Keyboard,received,106,wait
+3994,Stimulus,presented,0
+5358,Stimulus,presented,2
+5858,Stimulus,presented,3
+6063,Stimulus,presented,3
+6911,Keyboard,received,102,wait
+6912,Stimulus,presented,0
+8283,Stimulus,presented,2
+8784,Stimulus,presented,4
+8996,Stimulus,presented,3
+9745,Keyboard,received,102,wait
+9745,Stimulus,presented,0
+11084,Stimulus,presented,2
+11585,Stimulus,presented,5
+11796,Stimulus,presented,3
+12244,Keyboard,received,106,wait
+12244,Stimulus,presented,0
+13583,Stimulus,presented,2
+14084,Stimulus,presented,6
+14296,Stimulus,presented,3
+14787,Keyboard,received,106,wait
+14787,Stimulus,presented,0
+16199,Stimulus,presented,7
+17200,Stimulus,presented,8
+18199,Stimulus,presented,9
+19199,Stimulus,presented,10
+20199,Stimulus,presented,11
+21199,Stimulus,presented,12
+22200,Stimulus,presented,13
+23200,Stimulus,presented,14
+24201,Stimulus,presented,15
+25200,Stimulus,presented,16
+26200,Stimulus,presented,17
+27200,Stimulus,presented,18
+28201,Stimulus,presented,19
+29201,Stimulus,presented,20
+30201,Stimulus,presented,21
+31201,Stimulus,presented,22
+32202,Stimulus,presented,23
+33202,Stimulus,presented,24
+34202,Stimulus,presented,25
+35203,Stimulus,presented,26
+36204,Stimulus,presented,27
+37205,Stimulus,presented,28
+38205,Stimulus,presented,29
+39206,Stimulus,presented,30
+40207,Stimulus,presented,31
+41208,Stimulus,presented,32
+42207,Stimulus,presented,33
+43208,Stimulus,presented,34
+44208,Stimulus,presented,35
+45209,Stimulus,presented,36
+46207,Stimulus,presented,2
+46707,Stimulus,presented,37
+46913,Stimulus,presented,3
+48024,Keyboard,received,106,wait
+48025,Stimulus,presented,1
+49400,Stimulus,presented,2
+49900,Stimulus,presented,38
+50113,Stimulus,presented,3
+50869,Keyboard,received,106,wait
+50869,Stimulus,presented,1
+52273,Stimulus,presented,2
+52774,Stimulus,presented,39
+52980,Stimulus,presented,3
+53794,Keyboard,received,102,wait
+53794,Stimulus,presented,0
+55190,Stimulus,presented,2
+55691,Stimulus,presented,40
+55897,Stimulus,presented,3
+56264,Keyboard,received,106,wait
+56264,Stimulus,presented,0
+57675,Stimulus,presented,2
+58175,Stimulus,presented,41
+58380,Stimulus,presented,3
+59028,Keyboard,received,106,wait
+59029,Stimulus,presented,0
+60357,stderr,received,'Traceback (most recent call last):'
+60357,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 91, in <module>\n    present_instructions(INSTR_END)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^'
+60357,stderr,received,"TypeError: present_instructions() missing 1 required positional argument: 'text'"
+60359,Data,saved

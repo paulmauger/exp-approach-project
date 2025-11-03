@@ -1,26 +1,22 @@
 from constants import *
 from exp_utils import present_for
 import expyriment.stimuli as stimuli
+from expyriment.misc.constants import K_j, K_f
 
-fixation = stimuli.FixCross()
-
-hashmask = stimuli.TextLine("#################")
-
-def run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct):
+def run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct, fixation, hashmask, feedback_correct, feedback_incorrect, stim_text_size, bars):
     
-    stim = stimuli.TextLine(sequence)
+    stim = stimuli.TextLine(sequence, text_size=stim_text_size)
 
-    #We display the fixation cross only for the Fixation time FixCross + Bars (= 500 ms)
-    fixation.preload()
-    present_for(exp, fixation, t=FIXATION_TIME_CROSS_BARS)
+    #We display the fixation cross only for the Fixation time FixCross + Bars 
+    present_for(exp, fixation, *bars, t=FIXATION_TIME_CROSS_BARS)
 
-    #We display the bars for the fixation time FixCross + Bars plus the fixation time Bars (500ms+300ms)
-    #present_for(exp, bars, t=FIXATION_TIME_BARS)
+    #We display the bars for the fixation time FixCross + Bars plus the fixation time Bars
+    present_for(exp, *bars, t=FIXATION_TIME_BARS)
     
     #Present the sequence for 200ms 
-    present_for(exp, stim, t=FIXATION_TIME_SEQUENCE)
+    present_for(exp, stim, *bars, t=FIXATION_TIME_SEQUENCE)
 
-    hashmask.present()
+    present_for(exp, hashmask, *bars, t=0) #t=0 so it just prints the mask+bars and wait for the key
 
     key, rt = exp.keyboard.wait(KEYS)
     
@@ -35,7 +31,6 @@ def run_trial(exp, block_id, trial_id, trial_type, sequence, j_is_correct):
     #Add the data to the logs in /data 
     exp.data.add([block_id, trial_id, trial_type, sequence, rt, correct])
     
-    #Display the feedback during TIME_FEEDBACK (= 700ms)
-    feedback_text = FEEDBACK_CORRECT if correct else FEEDBACK_INCORRECT
-    feedback_stim = stimuli.TextLine(feedback_text)
+    #Display the feedback during TIME_FEEDBACK 
+    feedback_stim = feedback_correct if correct else feedback_incorrect
     present_for(exp, feedback_stim, t=TIME_FEEDBACK)

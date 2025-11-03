@@ -1,0 +1,12 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Nov 03 2025 01:09:56
+#sha1: dfa964
+#modules: constants.py (390ea5), exp_utils.py (0f384f), trial.py (452f28)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+2212,stderr,received,'Traceback (most recent call last):'
+2214,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 76, in <module>\n    control.start(subject_id=participant_ID)\n    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+2214,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/control/_experiment_control.py", line 209, in start\n    experiment.keyboard.wait()\n    ~~~~~~~~~~~~~~~~~~~~~~~~^^'
+2214,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/io/_keyboard.py", line 378, in wait\n    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+2214,stderr,received,'KeyboardInterrupt'

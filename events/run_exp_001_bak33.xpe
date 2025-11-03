@@ -1,0 +1,60 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Nov 03 2025 01:06:49
+#sha1: b90857
+#modules: constants.py (390ea5), exp_utils.py (552e79), trial.py (452f28)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1161,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1161,design,logged,
+1161,Experiment,started
+1167,Stimulus,presented,1
+7647,Keyboard,received,32,wait
+7648,stdout,received,"[{'item': '1', 'text': 'il mange le sol', 'cond': 'normal'}, {'item': '2', 'text': 'voté chien le a', 'cond': 'scrambled'}, {'item': '3', 'text': 'glaçons avalent les ils', 'cond': 'scrambled'}, {'item': '4', 'text': 'elle décide de plonger', 'cond': 'normal'}, {'item': '5', 'text': 'matelas est le vendu', 'cond': 'scrambled'}, {'item': '6', 'text': 'le professeur veut jongler', 'cond': 'normal'}, {'item': '7', 'text': 'il est le poisson', 'cond': 'normal'}, {'item': '8', 'text': 'elle jette la carotte', 'cond': 'normal'}, {'item': '9', 'text': 'jumeaux des sommes nous', 'cond': 'scrambled'}, {'item': '10', 'text': 'bien aurait elle cuisiné', 'cond': 'scrambled'}, {'item': '11', 'text': 'cet os va exploser', 'cond': 'normal'}, {'item': '12', 'text': 'le est dessin moche', 'cond': 'scrambled'}, {'item': '13', 'text': 'le livre est comestible', 'cond': 'normal'}, {'item': '14', 'text': 'une jeu partie de', 'cond': 'scrambled'}, {'item': '15', 'text': 'le crocodile se promène', 'cond': 'normal'}, {'item': '16', 'text': 'elle supplie le train', 'cond': 'normal'}, {'item': '17', 'text': 'manger manger être ou', 'cond': 'scrambled'}, {'item': '18', 'text': 'la est pleine foire', 'cond': 'scrambled'}, {'item': '19', 'text': 'des barres de chocolat', 'cond': 'normal'}, {'item': '20', 'text': 'partie cette de fin', 'cond': 'scrambled'}]"
+7649,Stimulus,presented,2
+8149,Stimulus,presented,2
+8350,Stimulus,presented,3
+9624,Keyboard,received,106,wait
+9625,Stimulus,presented,0
+10325,Stimulus,presented,2
+10826,Stimulus,presented,3
+11034,Stimulus,presented,3
+11526,Keyboard,received,106,wait
+11526,Stimulus,presented,1
+12227,Stimulus,presented,2
+12727,Stimulus,presented,4
+12934,Stimulus,presented,3
+13528,Keyboard,received,106,wait
+13528,Stimulus,presented,1
+14229,Stimulus,presented,2
+14729,Stimulus,presented,5
+14934,Stimulus,presented,3
+15397,Keyboard,received,106,wait
+15397,Stimulus,presented,0
+16097,Stimulus,presented,2
+16597,Stimulus,presented,6
+16801,Stimulus,presented,3
+17370,Keyboard,received,106,wait
+17370,Stimulus,presented,1
+18071,Stimulus,presented,2
+18572,Stimulus,presented,7
+18784,Stimulus,presented,3
+19136,Keyboard,received,106,wait
+19136,Stimulus,presented,0
+19836,Stimulus,presented,2
+20336,Stimulus,presented,8
+20551,Stimulus,presented,3
+20967,Keyboard,received,106,wait
+20967,Stimulus,presented,0
+21668,Stimulus,presented,2
+22168,Stimulus,presented,9
+22384,Stimulus,presented,3
+22852,stderr,received,'Traceback (most recent call last):'
+22853,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 90, in <module>\n    run_trial(exp, "TRAINING", trial_id, sequence[\'cond\'], sequence[\'text\'], j_is_correct)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+22853,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 25, in run_trial\n    key, rt = exp.keyboard.wait(KEYS)\n              ~~~~~~~~~~~~~~~~~^^^^^^'
+22853,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/io/_keyboard.py", line 378, in wait\n    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+22853,stderr,received,'KeyboardInterrupt'
+22854,Data,saved

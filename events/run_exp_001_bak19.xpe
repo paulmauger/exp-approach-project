@@ -1,0 +1,44 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Nov 02 2025 23:49:16
+#sha1: 154d06
+#modules: constants.py (0a001d), exp_utils.py (4798d0), trial.py (452f28)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1535,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1535,design,logged,
+1535,Experiment,started
+1540,Stimulus,presented,1
+3075,Keyboard,received,32,wait
+3076,Stimulus,presented,2
+3576,Stimulus,presented,2
+3790,Stimulus,presented,3
+4871,Keyboard,received,102,wait
+4871,Stimulus,presented,1
+6245,Stimulus,presented,2
+6746,Stimulus,presented,3
+6956,Stimulus,presented,3
+7032,Keyboard,received,106,wait
+7032,Stimulus,presented,0
+8421,Stimulus,presented,2
+8922,Stimulus,presented,4
+9123,Stimulus,presented,3
+9654,Keyboard,received,106,wait
+9654,Stimulus,presented,0
+11029,Stimulus,presented,2
+11529,Stimulus,presented,5
+11740,Stimulus,presented,3
+12213,Keyboard,received,102,wait
+12213,Stimulus,presented,0
+13572,Stimulus,presented,2
+14073,Stimulus,presented,6
+14289,Stimulus,presented,3
+15073,stderr,received,'Traceback (most recent call last):'
+15074,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 88, in <module>\n    run_trial(exp, block_id, trial_id, sequence[\'cond\'], sequence[\'text\'], j_is_correct)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+15074,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 25, in run_trial\n    key, rt = exp.keyboard.wait(KEYS)\n              ~~~~~~~~~~~~~~~~~^^^^^^'
+15074,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/io/_keyboard.py", line 378, in wait\n    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+15074,stderr,received,'KeyboardInterrupt'
+15074,Data,saved

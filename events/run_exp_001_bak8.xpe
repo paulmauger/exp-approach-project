@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Fri Oct 31 2025 15:13:16
+#sha1: e26755
+#modules: constants.py (1b9009), exp_utils.py (31f384), trial.py (d2441d)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+2695,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+2695,design,logged,
+2695,Experiment,started
+2708,Stimulus,presented,1
+4051,Keyboard,received,32,wait
+10334,Experiment,paused
+10341,Stimulus,presented,2
+12265,Keyboard,received,y,wait_char
+12265,Experiment,ended

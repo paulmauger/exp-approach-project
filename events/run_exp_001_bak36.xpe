@@ -1,0 +1,90 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Nov 03 2025 01:16:11
+#sha1: e89233
+#modules: constants.py (9fed0a), exp_utils.py (0f384f), trial.py (750b17)
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+2013,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+2013,design,logged,
+2013,Experiment,started
+2034,Stimulus,presented,4
+3340,Keyboard,received,32,wait
+3341,stdout,received,"[{'item': '1', 'text': 'il mange le sol', 'cond': 'normal'}, {'item': '2', 'text': 'voté chien le a', 'cond': 'scrambled'}, {'item': '3', 'text': 'glaçons avalent les ils', 'cond': 'scrambled'}, {'item': '4', 'text': 'elle décide de plonger', 'cond': 'normal'}, {'item': '5', 'text': 'matelas est le vendu', 'cond': 'scrambled'}, {'item': '6', 'text': 'le professeur veut jongler', 'cond': 'normal'}, {'item': '7', 'text': 'il est le poisson', 'cond': 'normal'}, {'item': '8', 'text': 'elle jette la carotte', 'cond': 'normal'}, {'item': '9', 'text': 'jumeaux des sommes nous', 'cond': 'scrambled'}, {'item': '10', 'text': 'bien aurait elle cuisiné', 'cond': 'scrambled'}, {'item': '11', 'text': 'cet os va exploser', 'cond': 'normal'}, {'item': '12', 'text': 'le est dessin moche', 'cond': 'scrambled'}, {'item': '13', 'text': 'le livre est comestible', 'cond': 'normal'}, {'item': '14', 'text': 'une jeu partie de', 'cond': 'scrambled'}, {'item': '15', 'text': 'le crocodile se promène', 'cond': 'normal'}, {'item': '16', 'text': 'elle supplie le train', 'cond': 'normal'}, {'item': '17', 'text': 'manger manger être ou', 'cond': 'scrambled'}, {'item': '18', 'text': 'la est pleine foire', 'cond': 'scrambled'}, {'item': '19', 'text': 'des barres de chocolat', 'cond': 'normal'}, {'item': '20', 'text': 'partie cette de fin', 'cond': 'scrambled'}]"
+3341,Stimulus,presented,0
+3842,Stimulus,presented,5
+4051,Stimulus,presented,1
+4416,Keyboard,received,106,wait
+4416,Stimulus,presented,2
+5117,Stimulus,presented,0
+5617,Stimulus,presented,6
+5817,Stimulus,presented,1
+6341,Keyboard,received,102,wait
+6341,Stimulus,presented,2
+7041,Stimulus,presented,0
+7541,Stimulus,presented,7
+7751,Stimulus,presented,1
+8142,Keyboard,received,106,wait
+8142,Stimulus,presented,3
+8842,Stimulus,presented,0
+9343,Stimulus,presented,8
+9551,Stimulus,presented,1
+9951,Keyboard,received,106,wait
+9951,Stimulus,presented,2
+10652,Stimulus,presented,0
+11152,Stimulus,presented,9
+11367,Stimulus,presented,1
+11874,Keyboard,received,106,wait
+11874,Stimulus,presented,3
+12575,Stimulus,presented,0
+13076,Stimulus,presented,10
+13284,Stimulus,presented,1
+13698,Keyboard,received,106,wait
+13698,Stimulus,presented,2
+14398,Stimulus,presented,0
+14898,Stimulus,presented,11
+15101,Stimulus,presented,1
+15540,Keyboard,received,106,wait
+15541,Stimulus,presented,2
+16240,Stimulus,presented,0
+16740,Stimulus,presented,12
+16951,Stimulus,presented,1
+17312,Keyboard,received,106,wait
+17312,Stimulus,presented,2
+18013,Stimulus,presented,0
+18513,Stimulus,presented,13
+18717,Stimulus,presented,1
+19213,Keyboard,received,106,wait
+19213,Stimulus,presented,3
+19914,Stimulus,presented,0
+20415,Stimulus,presented,14
+20617,Stimulus,presented,1
+21084,Keyboard,received,106,wait
+21084,Stimulus,presented,3
+21784,Stimulus,presented,0
+22284,Stimulus,presented,15
+22501,Stimulus,presented,1
+22852,Keyboard,received,106,wait
+22852,Stimulus,presented,2
+23553,Stimulus,presented,0
+24053,Stimulus,presented,16
+24268,Stimulus,presented,1
+24819,Keyboard,received,106,wait
+24820,Stimulus,presented,3
+25521,Stimulus,presented,0
+26022,Stimulus,presented,17
+26234,Stimulus,presented,1
+26676,Keyboard,received,106,wait
+26676,Stimulus,presented,2
+27376,Stimulus,presented,0
+27877,Stimulus,presented,18
+28101,Stimulus,presented,1
+29101,stderr,received,'Traceback (most recent call last):'
+29104,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/run_exp.py", line 98, in <module>\n    run_trial(exp, "TRAINING", trial_id, sequence[\'cond\'], sequence[\'text\'], j_is_correct, fixation, hashmask, feedback_correct, feedback_incorrect, stim_text_size)\n    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+29104,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/trial.py", line 22, in run_trial\n    key, rt = exp.keyboard.wait(KEYS)\n              ~~~~~~~~~~~~~~~~~^^^^^^'
+29104,stderr,received,'  File "/Users/paulm/Documents/cogsup/fast-syntax/.venv/lib/python3.13/site-packages/expyriment/io/_keyboard.py", line 378, in wait\n    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):\n                 ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+29104,stderr,received,'KeyboardInterrupt'
+29105,Data,saved
