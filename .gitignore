@@ -31,3 +31,5 @@ data/
 .env/
 *.log
 *.tmp
+events/
+__pycache__/
