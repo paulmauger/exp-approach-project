@@ -96,7 +96,7 @@ if mode in ['full', 'train']:
     present_instructions(exp, INSTR_TRAINING, scale_factor)
 
     seqs_trial = load_csv('tables/List_Training.csv')
-    print(seqs_trial)
+
     for trial_id in range(1, NB_TRIALS_TRAINING + 1):
         sequence = seqs_trial[trial_id-1]
         run_trial(exp, "TRAINING", trial_id, sequence['cond'], sequence['text'], j_is_correct, fixation, hashmask, feedback_correct, feedback_incorrect, stim_text_size, bars)
