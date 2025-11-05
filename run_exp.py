@@ -135,7 +135,7 @@ for block_id in range(1, NB_BLOCKS + 1):
     if block_id != NB_BLOCKS:
         for i in range(30, 0, -1):
             text = INSTR_MID.format(block_num=block_id, NB_BLOCKS=NB_BLOCKS, countdown=i)
-            instructions = stimuli.TextScreen(text=text, text_justification=0, heading="Instructions")
+            instructions = stimuli.TextScreen(text=text, text_justification=0, heading="Instructions", text_size=int(22*scale_factor))
             present_for(exp, instructions, t=1000)
 
 

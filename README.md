@@ -28,13 +28,13 @@ This code uses the Python library `Expyriment` (https://docs.expyriment.org) to 
 You can run the experiment from your terminal using `python3 run_exp.py` with the following arguments:
 
 *   `--id <number>`: **Participant ID** (e.g., `--id 1`). Defaults to `1`.
-*   `--mode <mode>`: **Experiment mode**. Can be `full` or `train`. Defaults to `full`.
+*   `--mode <mode>`: **Experiment mode**. Can be `full`, `experiment` or `train`. Defaults to `full`.
 *   `--fullscreen`: **Display mode**. Add this flag to run in fullscreen.
 
 ### Full Experiment (Default)
 - To run the **full experiment** (training + experiment) for the first participant in fullscreen, execute: 
 ```bash
-python3 run_exp.py full --id 1 --fullscreen
+python3 run_exp.py --mode full --id 1 --fullscreen
 ```
 
 which is equivalent to:
@@ -46,14 +46,14 @@ python3 run_exp --fullscreen
 
 - To run only the **training trials**, execute: 
 ```bash
-python3 run_exp training
+python3 run_exp --mode train
 ```
 
 ### Experiment blocks
 
 - To run only the **main experiment blocks**, execute: 
 ```bash
-python3 run_exp experiment
+python3 run_exp --mode experiment
 ```
 
 
